@@ -1,0 +1,12 @@
+# Accepts strings that start with "abc" and end with "xyz"
+states: S0, S1, S2, S3, S4, S5
+alphabet: 'a', 'b', 'c', 'x', 'y', 'z'
+start: S0
+accept: S2, S5
+transitions:
+S0 'a' S1
+S1 'b' S2
+S2 'c' S3
+S3 'x' S4
+S4 'y' S5
+S5 'z' S5

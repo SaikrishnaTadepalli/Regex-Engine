@@ -1,0 +1,12 @@
+# NFA that matches strings that contain "aba" or "bab"
+states: S0, S1, S2, S3
+alphabet: 'a', 'b'
+start: S0
+accept: S3
+transitions:
+S0 'a' S1
+S0 'b' S2
+S1 'b' S3
+S2 'a' S3
+S3 'a' S3
+S3 'b' S3

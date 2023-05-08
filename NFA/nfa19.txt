@@ -1,0 +1,14 @@
+# Accepts strings of 'a's and 'b's that contain at least two consecutive 'a's
+states: S0, S1, S2, S3
+alphabet: 'a', 'b'
+start: S0
+accept: S3
+transitions:
+S0 'a' S1
+S0 'b' S0
+S1 'a' S2
+S1 'b' S0
+S2 'a' S3
+S2 'b' S0
+S3 'a' S3
+S3 'b' S3

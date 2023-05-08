@@ -1,0 +1,14 @@
+# Accepts strings of the form wv^R, where w and v are any strings and v^R is the reverse of v
+states: S0, S1, S2, S3, S4
+alphabet: 'a', 'b'
+start: S0
+accept: S4
+transitions:
+S0 'a' S1
+S0 'b' S2
+S1 'a' S1
+S1 'b' S3
+S2 'a' S3
+S2 'b' S2
+S3 'a' S4
+S3 'b' S4

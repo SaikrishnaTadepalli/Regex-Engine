@@ -1,0 +1,16 @@
+# Accepts strings that ends with "abb", where the first part of the string can be any combination of 'a' or 'b'
+states: S0, S1, S2, S3, S4, S5, S6
+alphabet: 'a', 'b'
+start: S1
+accept: S4, S5, S6
+transitions:
+S1 'a' S2
+S1 'b' S2
+S2 'a' S2
+S2 'b' S3
+S3 'a' S4
+S3 'b' S2
+S4 'a' S5
+S5 'b' S6
+S6 'a' S6
+S6 'b' S6

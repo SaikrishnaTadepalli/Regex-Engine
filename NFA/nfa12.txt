@@ -1,0 +1,16 @@
+# NFA that matches strings that contain 'aba' or 'bcb'
+states: S0, S1, S2, S3, S4, S5
+alphabet: a, b, c
+start: S0
+accept: S5
+transitions:
+S0 a S1
+S1 b S2
+S2 a S3
+S3 e S4
+S4 b S5
+S0 b S1
+S1 c S2
+S2 b S3
+S3 e S4
+S4 c S5

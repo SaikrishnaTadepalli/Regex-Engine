@@ -1,0 +1,10 @@
+# Accepts strings that start with 'a', end with 'c', and may contain any number of 'b's in between
+states: A, B, C, D
+alphabet: 'a', 'b', 'c'
+start: A
+accept: D
+transitions:
+A 'a' B
+A 'b' C
+B 'a' D
+C 'c' D

@@ -1,0 +1,9 @@
+# Accepts strings that start with a 1 and end with a 0
+states: A, B, C, D
+alphabet: '0', '1'
+start: A
+accept: D
+transitions:
+A '1' B
+B '0' C
+C '0' D

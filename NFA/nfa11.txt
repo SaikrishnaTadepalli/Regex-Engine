@@ -1,0 +1,13 @@
+# NFA that matches strings that start with 'a', end with 'b', and contain 'ab'
+states: S0, S1, S2, S3, S4
+alphabet: a, b
+start: S0
+accept: S4
+transitions:
+S0 a S1
+S1 a S1
+S1 b S2
+S2 a S3
+S3 b S4
+S2 b S2
+S3 a S3

@@ -1,0 +1,11 @@
+# Accepts strings that end in '1' or contain '0' followed by '1'
+states: S0, S1, S2, S3
+alphabet: '0', '1'
+start: S0
+accept: S3
+transitions:
+S0 '0' S1
+S0 '1' S2
+S1 '1' S2
+S2 '0' S1
+S2 '1' S3

@@ -1,0 +1,15 @@
+# Accepts strings that starts with 'ab' or 'ba', followed by zero or more occurrences of 'c' and 'd'
+states: S0, S1, S2, S3, S4, S5, S6
+alphabet: 'a', 'b'
+start: S1
+accept: S4, S5, S6
+transitions:
+S1 'a' S2
+S1 'b' S3
+S2 'a' S2
+S2 'b' S4
+S3 'a' S5
+S3 'b' S3
+S4 'c' S6
+S5 'c' S6
+S6 'c' S6

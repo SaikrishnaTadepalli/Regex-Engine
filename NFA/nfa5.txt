@@ -1,0 +1,10 @@
+# Accepts strings of the form 'a'^n 'b'^n for n > 0
+states: S0, S1, S2
+alphabet: 'a', 'b'
+start: S0
+accept: S2
+transitions:
+S0 'a' S1
+S1 'b' S2
+S1 'a' S1
+S2 'b' S2

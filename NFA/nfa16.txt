@@ -1,0 +1,15 @@
+# Accepts strings with even number of 'a's and odd number of 'b's
+states: S0, S1, S2, S3
+alphabet: 'a', 'b'
+start: S0
+accept: S1, S2
+transitions:
+S0 'a' S1
+S0 'b' S3
+S1 'a' S0
+S1 'a' S2
+S1 'b' S3
+S2 'a' S3
+S2 'b' S0
+S3 'a' S2
+S3 'b' S1

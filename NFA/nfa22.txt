@@ -1,0 +1,13 @@
+# Accepts strings that ends with 'd' where the string can contain any number of 'a's followed by a 'b', or any number of 'c's
+states: S0, S1, S2, S3, S4, S5
+alphabet: 'a', 'b'
+start: S1
+accept: S3, S5
+transitions:
+S1 'a' S2
+S1 'c' S4
+S2 'a' S2
+S2 'b' S3
+S3 'd' S5
+S4 'c' S4
+S4 'd' S5
