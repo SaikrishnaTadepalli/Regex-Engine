@@ -10,6 +10,7 @@ This project involves building a Regular Expression (Regex) Engine from scratch,
 
 I am currently prototyping the implementation of the Parser, Compiler, NFA-To-DFA Converter, DFA Reducer, and Matcher in Python. I will then port it over to C++ and begin optimizations.
 
+Here is my general timeline:
 - Build the basic regex engine using a simple NFA architecture. This enables matching on simple regular expressions.
 - Add support for Lookaheads.
 - Add support for Lookbehinds.
