@@ -1,7 +1,6 @@
 # Regex-Engine
 
-This project involves building a Regular Expression (Regex) Engine from scratch, starting with a basic NFA Architecture and gradually adding advanced features such as Lookaheads, Backreferences, and Multithreading support. The main focus is on performance optimization - to create a powerful tool that can handle even the most complex pattern matching tasks with high efficiency.
-
+This project involves building a Regular Expression (Regex) Engine from scratch, starting with a basic NFA/DFA Architecture and gradually adding advanced features such as Lookaheads, Backreferences, and Multithreading support. The main focus is on performance optimization - to create a powerful tool that can handle even the most complex pattern matching tasks with high efficiency.
 
 ## Getting Started
 
@@ -9,6 +8,9 @@ This project involves building a Regular Expression (Regex) Engine from scratch,
 
 ## TimeLine
 
+I am currently prototyping the implementation of the Parser, Compiler, NFA-To-DFA Converter, DFA Reducer, and Matcher in Python. I will then port it over to C++ and begin optimizations.
+
+Here is my general timeline:
 - Build the basic regex engine using a simple NFA architecture. This enables matching on simple regular expressions.
 - Add support for Lookaheads.
 - Add support for Lookbehinds.
