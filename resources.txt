@@ -1,0 +1,14 @@
+https://swtch.com/~rsc/regexp/regexp1.html
+
+https://swtch.com/~rsc/regexp/regexp3.html
+
+https://www.abstractsyntaxseed.com/blog/regex-engine/regex-to-nfa
+
+
+
+https://deniskyashif.com/2019/02/17/implementing-a-regular-expression-engine/
+
+https://github.com/deniskyashif/regexjs/blob/master/src/parser2.js
+
+https://kean.blog/post/lets-build-regex#grammar
+

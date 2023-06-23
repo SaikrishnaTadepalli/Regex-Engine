@@ -4,8 +4,6 @@ class RegexEngine:
         self.val = 'val'
     
     def run(self, pattern, text):
-        print('--- RUNNING ---')
-        print('Pattern = ' + pattern)
-        print('Text = ' + pattern)
-        print('self.val = ' + self.val)
-        print('--- FINISHED ---')
+        print('--- Running Regex Engine ---')
+        
+        print('----- Finished Running -----')
